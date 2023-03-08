@@ -5,12 +5,16 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.os.Build
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.NotificationCompat
 import androidx.core.app.TaskStackBuilder
 import com.udacity.project4.BuildConfig
 import com.udacity.project4.R
 import com.udacity.project4.locationreminders.ReminderDescriptionActivity
 import com.udacity.project4.locationreminders.reminderslist.ReminderDataItem
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts.RequestPermission
+import androidx.annotation.RequiresApi
 
 private const val NOTIFICATION_CHANNEL_ID = BuildConfig.APPLICATION_ID + ".channel"
 
